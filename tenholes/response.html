@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>口琴文章 - 蓝调口琴网</title>
+	<meta charset="UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="renderer" content="webkit">
+	<link rel="icon" href="/images/favicon1.ico" mce_href="/images/favicon1.ico" type="image/x-icon">
+	<meta name="csrf-param" content="_csrf-frontend">
+<meta name="csrf-token" content="vr_5S7FlrS3SbyVk7ybZFXyBf6HOC_3AirjL46TJeZjm6Jgn4grCd54ifCC3dJdKNMUe-IN8sazg1JTX6r9B9g==">
+        <meta name='keywords' content='蓝调口琴网,北京口琴课程,口琴购买'/>
+<meta name='description' content='本站教学由中国蓝调口琴演奏家张晓松老师整理编著，提供了丰富易懂的谱例，专业的音频示范和伴奏，图文结合的详细讲解，让你轻松掌握蓝调口琴的各项技巧。'/>
+<link href="/styles/base.css?v=1602390273" rel="stylesheet">
+<link href="/styles/style.css?v=1600870502" rel="stylesheet">
+<link href="/styles/swiper.min.css?v=1599013993" rel="stylesheet">        <script>
+            var _hmt = _hmt || [];
+            (function() {
+                var hm = document.createElement("script");
+                hm.src = "https://hm.baidu.com/hm.js?2f7f7866ed2b0addd933476e1018bb2a";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+</head>
+<body>        
+
+        
+        <!--header-->
+<script src="http://res.wx.qq.com/connect/zh_CN/htmledition/js/wxLogin.js"></script>
+<!-- <script src="/js/SelectBox.min.js"></script> -->
+	<header class="header-wrap">
+		<input type="hidden" id="common_messageNum" value="0">
+        <input type="hidden" id="common_noticeNum" value="0">
+        <input type="hidden" id="common_num" value="0">
+		<h1 class="logo-center">
+			<a href="/"><img src="http://cache1.tenholes.com/pc/images/logo.jpg"/></a>
+		</h1>
+            		<div class="header-con">
+			<div class="wrapper">
+				<div class="nav-main clearfix">
+					<a href="/" class="">首页</a>
+					<a href="/lessons/index/" class="">教程</a>
+					<a href="/tabs/index/" class="">曲谱</a>
+					<a href="/article/index/" class="active">文章</a>
+					<a href="/news/shop/" class="">商店</a>
+					<a href="/news/vip/" class="">VIP</a>
+					<a href="/news/wechat/" class="">小程序</a>
+					<a href="/news/new/" class="">新手入口</a>
+				</div>
+				<div class="search-wrap">
+					<form action="/search/" method="post">
+						<!-- <div class="sea-type">
+							<input type="hidden" name="sea-type" data-sel-value value="0" />
+							<span data-sel-text>曲谱</span>
+							<ul class="sea-list" data-select>
+								<li data-option="0">曲谱</li>
+								<li data-option="1">教程</li>
+								<li data-option="2">文章</li>
+							</ul>
+						</div> -->
+						<input type="hidden" name="_csrf-frontend" id="_csrf" value="vr_5S7FlrS3SbyVk7ybZFXyBf6HOC_3AirjL46TJeZjm6Jgn4grCd54ifCC3dJdKNMUe-IN8sazg1JTX6r9B9g=="/>
+						<input type="hidden" name="sea-type" id="searchType" value="0" />
+						<div id="comSearch" class="search-box"></div>
+						<input type="text" name="search" id="search" />
+						<button type="submit"></button>
+					</form>
+				</div>
+				
+				<div class="user-wrap clearfix">
+								<!--登录--> 
+					
+					<a id='userAvatar' href="/user/index/">
+						<div class="head-img-box" style="background: url(http://cache1.tenholes.com/userfiles/avatar2.png) no-repeat center center;background-size: cover;">
+							  
+							
+						</div>
+					</a>
+					<a href="/logout?_csrf-frontend=vr_5S7FlrS3SbyVk7ybZFXyBf6HOC_3AirjL46TJeZjm6Jgn4grCd54ifCC3dJdKNMUe-IN8sazg1JTX6r9B9g==">退出</a>
+								</div>
+			</div>
+		</div>
+	</header>
+	
+	<div id="login_container" style="display:none;"></div>
+	<!--register-->
+		<div class="lo-wrapper" id="register" style="display: none;">
+			<h4 class="lo-tit">注册新用户</h4>
+			<form action='/register/index/' onsubmit="return false" id="registerForm">
+				<input type="hidden" name="_csrf-frontend" id="_csrf" value="vr_5S7FlrS3SbyVk7ybZFXyBf6HOC_3AirjL46TJeZjm6Jgn4grCd54ifCC3dJdKNMUe-IN8sazg1JTX6r9B9g=="/>
+				
+				<input type="text" placeholder="用户名" name="uname" class="lo-input" />
+				<input type="password" placeholder="输入密码 长度8-16位，必须包含数字、字母" name="pwd" class="lo-input" />
+				<input type="password" placeholder="再次确认密码" name="cpwd" class="lo-input" />
+				<!-- <input type="text" placeholder="手机" name="tel" class="lo-input" />
+				<div class="lo-code">
+					<input type="text" placeholder="请输入验证码" name="code" class="lo-input code CAPTCHABtn" data-status="0" />
+					<button type="button" class="lo-btn lo-codebtn CAPTCHABtn"  data-status="0" onclick="getRegisterCAPTCHA(this)">获取手机验证码</button>
+				</div> -->
+				<button type="button" class="lo-btn lo-submit" onclick="register()">注&nbsp;&nbsp;&nbsp;&nbsp;册</button>
+			</form>
+			<div class="lo-icon">
+				<img src="http://cache1.tenholes.com/pc/images/logo_wechat.png" onclick="WX()" />
+			</div>
+			<p class="lo-text" onclick="showLogin()">已有账户，直接登录</p>
+			<p class="lo-tap" onclick="closeLayerBox()">随便看看>></p>
+		</div>
+		
+		<!--login-->
+		<div class="lo-wrapper" id="login" style="display: none;">
+			<h4 class="lo-tit">登录</h4>
+			<form onsubmit="return false" id="loginForm">
+				<input type="hidden" name="_csrf-frontend" id="_csrflogin" value="vr_5S7FlrS3SbyVk7ybZFXyBf6HOC_3AirjL46TJeZjm6Jgn4grCd54ifCC3dJdKNMUe-IN8sazg1JTX6r9B9g=="/>
+				<input type="text" placeholder="手机/用户名" name="loginuname" class="lo-input" />
+				<input type="password" placeholder="请输入密码" name="loginpwd" class="lo-input" />
+				<div class="lo-repass clearfix">
+					<label><input type="checkbox" name="remember">记住密码</label>
+					<p class="lo-forpass" onclick="showFindPassword()">忘记密码</p>
+				</div>
+				<button type="button" class="lo-btn lo-submit" onclick="login()">登&nbsp;&nbsp;&nbsp;&nbsp;录</button>
+			</form>
+			<p class="lo-text" onclick="showRegister()">去注册</p>
+			<div class="lo-icon">
+				<img src="http://cache1.tenholes.com/pc/images/logo_wechat.png" onclick="WX()" />
+			</div>
+			<p class="lo-tap" onclick="closeLayerBox()">随便看看>></p>
+		</div>
+		
+		<!--findPassword-->
+		<div class="lo-wrapper" id="findPassword" style="display: none;">
+			<h4 class="lo-tit">找回密码</h4>
+			<input type="hidden" name="_csrf-frontendfind" id="_csrffind" value="vr_5S7FlrS3SbyVk7ybZFXyBf6HOC_3AirjL46TJeZjm6Jgn4grCd54ifCC3dJdKNMUe-IN8sazg1JTX6r9B9g=="/>
+			<input type="text" placeholder="用户名(或已绑定的手机号)" name="login_username" id="login_username" class="lo-input" />
+			<input type="text" placeholder="手机" name="findtel" id="findtel" class="lo-input" />
+			<div class="lo-code">
+				<input type="text" placeholder="请输入验证码" name="findCode" class="lo-input code" />
+				<button type="button" class="lo-btn lo-codebtn  CAPTCHABtn"  data-status="0" onclick="getVerificationCodeSend(this)">获取手机验证码</button>
+			</div>
+			<button type="button" class="lo-btn lo-submit" onclick="nextStepPassword()">下一步</button>
+		</div>
+		
+		<!--resetPassword-->
+		<div class="lo-wrapper" id="resetPassword" style="display: none;">
+			<h4 class="lo-tit">重置密码</h4>
+			<p>密码长度为8-16位，必须包含数字、字母。</p>
+			<input type="hidden" name="_csrf-frontendrset" id="_csrfrset" value="vr_5S7FlrS3SbyVk7ybZFXyBf6HOC_3AirjL46TJeZjm6Jgn4grCd54ifCC3dJdKNMUe-IN8sazg1JTX6r9B9g=="/>
+			<input type="password" placeholder="输入新密码" name="setpassword" class="lo-input" />
+			<input type="password" placeholder="再次输入新密码" name="reSetPassword" class="lo-input" />
+			<button type="button" class="lo-btn lo-submit" onclick="changePassword()">确&nbsp;&nbsp;&nbsp;&nbsp;认</button>
+		</div><input type="hidden" id="wx-title" value="口琴文章 - 蓝调口琴网"/>
+<input type="hidden" id="wx-img" value="http://www.tenholes.com/images/logo.png"/>
+<input type="hidden" id="wx-con" value="本站教学由中国蓝调口琴演奏家张晓松老师整理编著，提供了丰富易懂的谱例，专业的音频示范和伴奏，图文结合的详细讲解，让你轻松掌握蓝调口琴的各项技巧。"/>
+<input type="hidden" id="wx-link" value="http://www.tenholes.com:80/article/index/"/>
+<input type="hidden" name="_type" id="_type" value="0"/>
+<!--文章内容-->
+<!--article-->
+	<div class="wrapper">
+		<!--banner-->
+		<div class="a-banner swiper-container" id="banner">
+                    <div class="swiper-wrapper">
+                        		    </div>
+			<div class="swiper-pagination"></div>
+		</div>
+		<!--nav-->
+		<div class="a-nav clearfix">
+			<div class="a-navlist clearfix">
+				<a href="/article/index/" class="active">全部</a>
+																						<a href="/article/index?cid=1" >新闻</a>
+																							<a href="/article/index?cid=2" >演出</a>
+																							<a href="/article/index?cid=3" >视听</a>
+																							<a href="/article/index?cid=4" >名家</a>
+																																							<div class="a-viptar" id="articleVIPTar">
+									<div class="a-viptit">VIP专享</div>
+									<div class="a-viptip" id="articleVIPTip">
+										<i></i>
+										为VIP用户专享，包含大量经典教学资料、唱片音乐、内部资料以及其他资源的下载分享。
+										<span onclick="location.href='/news/vip/'">成为VIP</span>
+									</div>
+								</div>
+																													</div>
+			<form action="/article/search/" method="get">
+				<div class="a-search clearfix">
+					<input type="text" name="s" placeholder="输入你要查找的内容" />
+                        <input type="hidden" name="_csrf-frontend" id="_csrf" value="vr_5S7FlrS3SbyVk7ybZFXyBf6HOC_3AirjL46TJeZjm6Jgn4grCd54ifCC3dJdKNMUe-IN8sazg1JTX6r9B9g=="/>
+                        <button type="submit"></button>
+				</div>
+			</form>
+		</div>
+		<!--list-->
+		<div class="wrapper com-title clearfix">
+			<h4>文章列表</h4>
+		</div>
+		<div class="ai-wrapper clearfix" id="articleWrap">
+			    <input type="hidden" name="_csrf-frontend" id="_csrf" value="vr_5S7FlrS3SbyVk7ybZFXyBf6HOC_3AirjL46TJeZjm6Jgn4grCd54ifCC3dJdKNMUe-IN8sazg1JTX6r9B9g=="/>
+    <input type="hidden" name="_type" id="_type" value="0"/>
+                                             						<a href="/article/view?id=654" class="ai-item" target="_blank">
+																				<i class="ai-itop">推荐</i>
+														<img src="http://cache1.tenholes.com/20210710/202107102317069897.png" />
+							<dl class="ai-dl">
+								<dt class="ai-dt line-clamp2">
+									<span>新闻</span>
+										蓝网口琴私塾（北京、上海）新一期开始招生啦，大家来选择适合的班级吧								</dt>
+								<dd class="ai-text"></dd>
+								<dd class="ai-tap">
+									<span class="ai-views">112</span>
+									<span class="ai-time">2021-07-10 23:17</span>
+								</dd>
+							</dl>
+						</a>
+                                            						<a href="/article/view?id=653" class="ai-item" target="_blank">
+																				<img src="http://cache1.tenholes.com/20210710/202107102315108399.jpg" />
+							<dl class="ai-dl">
+								<dt class="ai-dt line-clamp2">
+									<span>视听</span>
+										新课首发优惠 | 吉普赛爵士风格初级课程（蓝调口琴）								</dt>
+								<dd class="ai-text"></dd>
+								<dd class="ai-tap">
+									<span class="ai-views">103</span>
+									<span class="ai-time">2021-07-10 23:14</span>
+								</dd>
+							</dl>
+						</a>
+                                            						<a href="/article/view?id=652" class="ai-item" target="_blank">
+																				<img src="http://cache1.tenholes.com/20210710/202107102308287738.jpg" />
+							<dl class="ai-dl">
+								<dt class="ai-dt line-clamp2">
+									<span>视听</span>
+										干货分享 | 哪个调子的口琴最“蓝”？								</dt>
+								<dd class="ai-text">口琴教学笔记</dd>
+								<dd class="ai-tap">
+									<span class="ai-views">84</span>
+									<span class="ai-time">2021-07-10 23:08</span>
+								</dd>
+							</dl>
+						</a>
+                                            						<a href="/article/view?id=651" class="ai-item" target="_blank">
+																				<img src="http://cache1.tenholes.com/20210704/202107041926523769.png" />
+							<dl class="ai-dl">
+								<dt class="ai-dt line-clamp2">
+									<span>新闻</span>
+										阿根廷口琴演奏家Mariano Massolo正式加盟蓝调口琴网								</dt>
+								<dd class="ai-text"></dd>
+								<dd class="ai-tap">
+									<span class="ai-views">158</span>
+									<span class="ai-time">2021-07-04 19:26</span>
+								</dd>
+							</dl>
+						</a>
+                                            						<a href="/article/view?id=650" class="ai-item" target="_blank">
+																				<img src="http://cache1.tenholes.com/20210704/202107041907503937.png" />
+							<dl class="ai-dl">
+								<dt class="ai-dt line-clamp2">
+									<span>视听</span>
+										口琴手必修：从入门到进阶的10条布鲁斯风格回转（Turnaround）乐句								</dt>
+								<dd class="ai-text"></dd>
+								<dd class="ai-tap">
+									<span class="ai-views">208</span>
+									<span class="ai-time">2021-07-04 19:07</span>
+								</dd>
+							</dl>
+						</a>
+                                            						<a href="/article/view?id=649" class="ai-item" target="_blank">
+																				<img src="http://cache1.tenholes.com/20210704/202107041859145808.png" />
+							<dl class="ai-dl">
+								<dt class="ai-dt line-clamp2">
+									<span>演出</span>
+										沙发音乐Sofar，200个听众在大草地上随着口琴声雀跃								</dt>
+								<dd class="ai-text"></dd>
+								<dd class="ai-tap">
+									<span class="ai-views">104</span>
+									<span class="ai-time">2021-07-04 18:56</span>
+								</dd>
+							</dl>
+						</a>
+                                            						<a href="/article/view?id=647" class="ai-item" target="_blank">
+																				<img src="http://cache1.tenholes.com/20210626/202106261815331156.png" />
+							<dl class="ai-dl">
+								<dt class="ai-dt line-clamp2">
+									<span>视听</span>
+										舌堵技巧千万别这么练！越学越废！								</dt>
+								<dd class="ai-text"></dd>
+								<dd class="ai-tap">
+									<span class="ai-views">274</span>
+									<span class="ai-time">2021-06-26 18:16</span>
+								</dd>
+							</dl>
+						</a>
+                                            						<a href="/article/view?id=646" class="ai-item" target="_blank">
+																				<img src="http://cache1.tenholes.com/20210623/202106231100088278.jpg" />
+							<dl class="ai-dl">
+								<dt class="ai-dt line-clamp2">
+									<span>演出</span>
+										开票 7/17 MOJOHAND | 283天52城60场巡演 北京收官								</dt>
+								<dd class="ai-text"></dd>
+								<dd class="ai-tap">
+									<span class="ai-views">186</span>
+									<span class="ai-time">2021-06-23 11:00</span>
+								</dd>
+							</dl>
+						</a>
+                                    		</div>
+		
+                                    <!--<div class="get-more"></div>-->
+                    <span class="wplane-btn ai-more" id="getMore">更多文章</span>
+                	</div>
+	
+<!-- jquery模板 -->
+<script id="jqueryTmpl" type="text/x-jquery-tmpl">
+
+{{if is_vip > 0 }}
+			<a href="/article/view?id=${id}" class="ai-item" target="_blank">
+	{{else}}
+	<a href="/article/view?id=${id}" class="ai-item" target="_blank">
+{{/if}}
+{{if toptime > 0 }}
+	<i class="ai-itop">推荐</i>
+{{/if}}
+{{if logo == ''}}
+	<img src="http://cache1.tenholes.com/pc/images/img2.jpg" />
+ {{else}}
+	<img src="${logo}" />
+{{/if}}
+	<dl class="ai-dl">
+		<dt class="ai-dt line-clamp2">
+			<span>${cname}</span>
+				${title}
+		</dt>
+		<dd class="ai-text">${description}</dd>
+		<dd class="ai-tap">
+			<span class="ai-views">${view_num}</span>
+			<span class="ai-time">${created}</span>
+		</dd>
+	</dl>
+</a>
+</script>
+
+        <script src="/js/jquery-3.4.1.min.js?v=1599013993"></script>
+<script src="/js/SelectBox.min.js?v=1599013993"></script>
+<script src="/js/common.js?v=1610430898"></script>
+<script src="/layer/layer.js?v=1599013993"></script>
+<script src="/js/swiper.min.js?v=1599443022"></script>
+<script src="/js/jquery.tmpl.min.js?v=1599013993"></script>
+<script>	var bannerSwiper = new Swiper('#banner', {
+	autoplay: true,
+		loop : true,
+		pagination: {
+		  el: '.swiper-pagination'
+		},
+	});
+	
+	//VIP tip
+	$("#articleVIPTar").hover(function(event){
+		$("#articleVIPTip").show();
+	},function(){
+		$("#articleVIPTip").hide();
+	});
+	
+	//下拉刷新
+	var page = 1;
+	var type = $('#_type').val();
+	var csrfToken = $('#_csrf').val();
+	$(".ai-more").click(function(){
+		//var index = layer.load(2, {shade: false});
+		page = page + 1;
+		$.ajax({
+		type : "POST",
+		dataType:"text",
+		url : "/article/ajax/",
+		data : {"_csrf-frontend":csrfToken,"type":type ,"num":8,"page": page},
+		success : function(result) {
+				//layer.close(index);
+				var result = JSON.parse(result);
+				if(result.length > 0){
+					$("#jqueryTmpl").tmpl(result).appendTo('#articleWrap');
+				}else{
+					layer.msg("暂无更多内容");
+					$("#getMore").hide();
+				}
+			}
+		}); 
+	});
+    // //  消息提示框
+    // var common_messageNum = $('#common_messageNum').val();
+    // var common_noticeNum = $('#common_noticeNum').val();
+    // var common_num = $('#common_num').val();
+    // if(common_num == 1 && (common_messageNum > 0 ||  common_noticeNum > 0) ){
+	   //  layer.msg('有新消息，请注意查看！', {
+	   //    time: 0 //不自动关闭
+	   //    ,btn: ['查看', '关闭']
+	   //    ,yes: function(index){
+	   //      layer.close(index);
+	   //      window.location.href = "/user/index/"; 
+	   //    }
+	   //    ,success: function(layero){
+	   //      layero.find('.layui-layer-btn').css('text-align', 'center');
+	   //    },
+	   //  });
+    // }
+</script>    </body>
+    <!--footer-->
+	<footer class="footer">
+		<div class="wrapper-s clearfix">
+			<dl class="footer-nav">
+				<dt>关于我们</dt>
+				<dd><a href="/news/index/">网站介绍</a></dd>
+				<dd><a href="/news/join/">加入我们</a></dd>
+			</dl>
+			<dl class="footer-nav">
+				<dt>关注我们</dt>
+				<dd><a href="javascript:void(0);" onclick="previewImg(this,'/images/ewm.jpg')">官方微信</a></dd>
+				<dd><a target="_blank" href="https://weibo.com/u/2415743041">官方微博</a></dd>
+			</dl>
+			<dl class="footer-nav">
+				<dt>联系我们</dt>
+				<dd>E-mail：soharp@126.com</dd>
+			</dl>
+		</div>
+		<div class="wrapper footer-text">Copyright(c) 2009-2021 www.tenholes.com ALL Rights Reserved <a href="https://beian.miit.gov.cn">京ICP备15046512号</a></div>
+	</footer>
+</html>
